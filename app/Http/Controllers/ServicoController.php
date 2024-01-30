@@ -43,44 +43,6 @@ class ServicoController extends Controller
         ]);
     }
     
-    public function pesquisarPoDescricao(Request $request)
-    {
-        $servico = Servico::where('descricao', 'like', '%' . $request->descricao . '%')->get();
-
-        if (count($servico) > 0) {
-
-            return response()->json([
-                'status' => true,
-                'data' => $servico
-            ]);
-        }
-
-        return response()->json([
-            'status' => false,
-            'message' => 'Não há resultados para pesquisa.'
-        ]);
-    }
-    public function retornarTodos(){
-        $servico = Servico::all();
-        return response()->json([
-            'status'=> true,
-            'data'=> $servico
-        ]);
-    }
-
-    public function pesquisarPorId($id){
-        $servico = servico::find($id);
-        if($servico == null){
-            return response()->json([
-                'status'=> false,
-                'message' => "Serviço não encontrado"
-            ]);     
-        }
-        return response()->json([
-            'status'=> true,
-            'data'=> $servico
-        ]);
-    }
 
     public function excluir($id)
     {
