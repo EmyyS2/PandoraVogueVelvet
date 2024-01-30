@@ -2,12 +2,10 @@
 
 namespace App\Http\Requests;
 
-use Illuminate\Foundation\Http;
-use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Exceptions\HttpResponseException;
-
-class AgendaFormRequest extends FormRequest
+class AgendaFormRequestUpdate extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -27,7 +25,7 @@ class AgendaFormRequest extends FormRequest
     public function rules()
     {
         return [
-
+           
             'profissional_id' => 'required|integer|exists:profissionals,id',
             'cliente_id' => 'integer',
             'servico_id'  => 'integer',
@@ -58,3 +56,4 @@ class AgendaFormRequest extends FormRequest
         ];
     }
 }
+
