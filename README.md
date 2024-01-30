@@ -26,7 +26,7 @@
 
 <h2 align="center">Descrição do Projeto</h2> 
 
-Na mitologia grega Pandora foi uma mulher criada pelos deuses para ter diversas qualidades como graça, beleza, inteligência, paciência e meiguice, nós como salão temos a finalidade de deixar nossos clientes belos como Pandora. Já os complementos Vogue e Velvet é por conta de sua elegância. Esse projeto tem como objetivo facilitar o desenvolvimento e realizar um site de um salão de beleza unisex fictícia feito por estudantes da escola SESI, para aprofundar nossos conhecimentos nas linguagens PHP e Json. 
+Na mitologia grega, Pandora foi uma mulher criada pelos deuses para ter diversas qualidades como graça, beleza, inteligência, paciência e meiguice. Nós, como salão, temos a finalidade de deixar nossos clientes belos como Pandora. Já os complementos Vogue e Velvet é por conta de sua elegância. Esse projeto tem, como objetivo, facilitar o desenvolvimento e realizar um site de um salão de beleza unisex fictícia feito por estudantes da escola SESI a fim de aprofundar nossos conhecimentos nas linguagens PHP e Json.
 
 <hr> 
 
