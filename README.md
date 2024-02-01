@@ -44,38 +44,50 @@ Na mitologia grega, Pandora foi uma mulher criada pelos deuses para ter diversas
 
 # :hammer: Funcionalidades do projeto 
 
-* ✔️`Funcionalidade 1`: Realizar cadastro dos clientes, podendo ser paciente ou profissional. Realizar cadastro de serviços e profissionais. 
+* ✔️`Funcionalidade 1`: Realizar cadastro dos ADM's, clientes, serviços e profissionais. 
 
-* ✔️`Funcionalidade 2`: Armazenar dados dos clientes e agendamentos dos mesmos.  
+* ✔️`Funcionalidade 2`: Armazenar dados dos clientes e dos profissionais e agendamentos dos mesmos. Além dos dados dos ADM's.  
 
-* ✔️`Funcionalidade 3`: Funções de recuperar senha de clientes e profissionais. 
+* ✔️`Funcionalidade 3`: Funções de recuperar senha dos ADM's, clientes, profissionais. 
 
  
 
  # 📁 Acesso ao projeto 
+<<<<<<< HEAD
  
+=======
+Clone este repositório para o seu ambiente de desenvolvimento local utilizando o comando:
+```
+>>>>>>> 9109c0b01b07a55d6990ce91d7c9a14d3252cc16
  - git clone https://github.com/EmyyS2/PandoraVogueVelvet.git
-
+```
  
 
 # 🛠️ Abrir e rodar o projeto 
-
-- cd PandoraVV 
-
-- code . 
-
+```
+- cd PandoraVogueVelvet
+```
+```
 - composer update 
-
+```
+```
 - copy .env.example .env 
-
-- php artisan migrate 
-
+```
+```
+- code .
+```
+```
 - git config --global user.name "EmyyS2" 
-
-- git config --global user.email "miacontapcsenai@gmail.com" 
-
+```
+```
+- git config --global user.email "miacontapcsenai@gmail.com"
+  ```
+```
+- php artisan migrate
+```
+```
 - php artisan serve 
-
+```
  
 
 # Desenvedores do projeto  
