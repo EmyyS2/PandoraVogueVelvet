@@ -62,17 +62,17 @@ Na mitologia grega, Pandora foi uma mulher criada pelos deuses para ter diversas
 
 - cd PandoraVogueVelvet
 
-- code . 
-
 - composer update 
 
 - copy .env.example .env 
 
-- php artisan migrate 
+- code .
 
 - git config --global user.name "EmyyS2" 
 
-- git config --global user.email "miacontapcsenai@gmail.com" 
+- git config --global user.email "miacontapcsenai@gmail.com"
+  
+- php artisan migrate 
 
 - php artisan serve 
 
