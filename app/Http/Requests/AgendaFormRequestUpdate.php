@@ -5,6 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Exceptions\HttpResponseException;
+
 class AgendaFormRequestUpdate extends FormRequest
 {
     /**
@@ -25,7 +26,7 @@ class AgendaFormRequestUpdate extends FormRequest
     public function rules()
     {
         return [
-           
+
             'profissional_id' => 'required|integer|exists:profissionals,id',
             'cliente_id' => 'integer',
             'servico_id'  => 'integer',
@@ -56,4 +57,3 @@ class AgendaFormRequestUpdate extends FormRequest
         ];
     }
 }
-

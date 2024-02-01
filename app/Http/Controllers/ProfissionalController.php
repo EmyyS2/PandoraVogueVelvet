@@ -54,7 +54,7 @@ class ProfissionalController extends Controller
     public function redefinirSenha(Request $request)
     {
         $Profissional =  Profissional::where('email', $request->email)->first();
-        
+
         if (!isset($Profissional)) {
             return response()->json([
                 'status' => false,
@@ -63,7 +63,7 @@ class ProfissionalController extends Controller
         }
 
         $Profissional->password = Hash::make($Profissional->cpf);
-        $Profissional->update();    
+        $Profissional->update();
 
         return response()->json([
             'status' => false,
@@ -83,10 +83,10 @@ class ProfissionalController extends Controller
                 "message" => "Profissional não encontrado"
             ]);
         }
-        $profissional_agendamento = Agenda::where('profissional_id', $id)->get(); 
-        if(count($profissional_agendamento) > 0){ 
+        $profissional_agendamento = Agenda::where('profissional_id', $id)->get();
+        if (count($profissional_agendamento) > 0) {
             return response()->json([
-                'status' => false, 
+                'status' => false,
                 'message' => 'Não foi possível excluir pois o profissional possui agendamentos registrados.'
             ]);
         }
@@ -111,46 +111,46 @@ class ProfissionalController extends Controller
         }
 
         if (isset($request->nome)) {
-            $Profissional->nome= $request->nome;
+            $Profissional->nome = $request->nome;
         }
         if (isset($request->celular)) {
-            $Profissional->celular= $request->celular;
+            $Profissional->celular = $request->celular;
         }
         if (isset($request->email)) {
-            $Profissional->email= $request->email;
+            $Profissional->email = $request->email;
         }
         if (isset($request->cpf)) {
-            $Profissional->cpf= $request->cpf;
+            $Profissional->cpf = $request->cpf;
         }
         if (isset($request->dataNascimento)) {
-            $Profissional->dataNascimento= $request->dataNascimento;
+            $Profissional->dataNascimento = $request->dataNascimento;
         }
         if (isset($request->cidade)) {
-            $Profissional->cidade= $request->cidade;
+            $Profissional->cidade = $request->cidade;
         }
         if (isset($request->estado)) {
-            $Profissional->estado= $request->estado;
+            $Profissional->estado = $request->estado;
         }
         if (isset($request->pais)) {
-            $Profissional->pais= $request->pais;
+            $Profissional->pais = $request->pais;
         }
         if (isset($request->rua)) {
-            $Profissional->rua= $request->rua;
+            $Profissional->rua = $request->rua;
         }
         if (isset($request->numero)) {
-            $Profissional->numero= $request->numero;
+            $Profissional->numero = $request->numero;
         }
         if (isset($request->bairro)) {
-            $Profissional->bairro= $request->bairro;
+            $Profissional->bairro = $request->bairro;
         }
         if (isset($request->cep)) {
-            $Profissional->cep= $request->cep;
+            $Profissional->cep = $request->cep;
         }
         if (isset($request->complemento)) {
-            $Profissional->complemento= $request->complemento;
+            $Profissional->complemento = $request->complemento;
         }
         if (isset($request->password)) {
-            $Profissional->password= $request->password;
+            $Profissional->password = $request->password;
         }
 
         $Profissional->update();

@@ -35,14 +35,14 @@ class ServicoController extends Controller
                 'data' => $servico
             ]);
         }
-        
+
 
         return response()->json([
             'status' => false,
             'message' => 'Não há resultados para pesquisa.'
         ]);
     }
-    
+
 
     public function excluir($id)
     {
@@ -62,35 +62,35 @@ class ServicoController extends Controller
         ]);
     }
 
-    public function update(ServicoFormRequestUpdate $request){
+    public function update(ServicoFormRequestUpdate $request)
+    {
         $servico = servico::find($request->id);
-    
-        if(!isset($servico)){
+
+        if (!isset($servico)) {
             return response()->json([
                 'status' => false,
                 'message' => "Serviço não encontrado"
             ]);
         }
-    
-        if(isset($request->nome)){
+
+        if (isset($request->nome)) {
             $servico->nome = $request->nome;
         }
-        if(isset($request->descricao)){
+        if (isset($request->descricao)) {
             $servico->descricao = $request->descricao;
         }
-        if(isset($request->duracao)){
+        if (isset($request->duracao)) {
             $servico->duracao = $request->duracao;
         }
-        if(isset($request->preco)){
+        if (isset($request->preco)) {
             $servico->preco = $request->preco;
         }
-    
+
         $servico->update();
-    
+
         return response()->json([
             'status' => false,
             'message' => "Serviço atualizado"
         ]);
-    
     }
-    }
+}

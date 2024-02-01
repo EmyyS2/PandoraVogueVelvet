@@ -10,6 +10,7 @@ class Pagamento extends Model
     use HasFactory;
     protected $fillable = [
         'nome',
-        'taxa'
+        'taxa',
+        'status'
     ];
 }
