@@ -53,29 +53,37 @@ Na mitologia grega, Pandora foi uma mulher criada pelos deuses para ter diversas
  
 
  # 📁 Acesso ao projeto 
-
+Clone este repositório para o seu ambiente de desenvolvimento local utilizando o comando:
+```
  - git clone https://github.com/EmyyS2/PandoraVogueVelvet.git
-
+```
  
 
 # 🛠️ Abrir e rodar o projeto 
-
+```
 - cd PandoraVogueVelvet
-
+```
+```
 - composer update 
-
+```
+```
 - copy .env.example .env 
-
+```
+```
 - code .
-
+```
+```
 - git config --global user.name "EmyyS2" 
-
+```
+```
 - git config --global user.email "miacontapcsenai@gmail.com"
-  
-- php artisan migrate 
-
+  ```
+```
+- php artisan migrate
+```
+```
 - php artisan serve 
-
+```
  
 
 # Desenvedores do projeto  
