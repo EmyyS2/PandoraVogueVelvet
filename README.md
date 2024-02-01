@@ -44,11 +44,11 @@ Na mitologia grega, Pandora foi uma mulher criada pelos deuses para ter diversas
 
 # :hammer: Funcionalidades do projeto 
 
-* ✔️`Funcionalidade 1`: Realizar cadastro dos clientes, podendo ser paciente ou profissional. Realizar cadastro de serviços e profissionais. 
+* ✔️`Funcionalidade 1`: Realizar cadastro dos ADM's, clientes, serviços e profissionais. 
 
-* ✔️`Funcionalidade 2`: Armazenar dados dos clientes e agendamentos dos mesmos.  
+* ✔️`Funcionalidade 2`: Armazenar dados dos clientes e dos profissionais e agendamentos dos mesmos. Além dos dados dos ADM's.  
 
-* ✔️`Funcionalidade 3`: Funções de recuperar senha de clientes e profissionais. 
+* ✔️`Funcionalidade 3`: Funções de recuperar senha dos ADM's, clientes, profissionais. 
 
  
 
@@ -60,7 +60,7 @@ Na mitologia grega, Pandora foi uma mulher criada pelos deuses para ter diversas
 
 # 🛠️ Abrir e rodar o projeto 
 
-- cd PandoraVV 
+- cd PandoraVogueVelvet
 
 - code . 
 
