@@ -1,105 +1,71 @@
-<h1 align="center"> Pandora Vogue Velvet </h1> 
+<h1 align="center"> Pandora`s Vogue Velvet </h1>
+<p align="center">
+<img src="Pandora VV.jpg" alt="LOGO">
+</p>
 
-<p align="center"> 
+# Índice 
+* [Descrição do Projeto](#descrição-do-projeto)
+* [Status do Projeto](#status-do-Projeto)
+* [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
+* [Acesso ao Projeto](#acesso-ao-projeto)
+* [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras)
 
-<img src="Pandora VV.jpg" alt="LOGO"> 
 
-</p> 
-
- 
-
-# Índice  
-
-* [Descrição do Projeto](#descrição-do-projeto) 
-
-* [Status do Projeto](#status-do-Projeto) 
-
-* [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação) 
-
-* [Acesso ao Projeto](#acesso-ao-projeto) 
-
-* [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras) 
-
- 
-
- 
-
-<h2 align="center">Descrição do Projeto</h2> 
-
+<h2 align="center">Descrição do Projeto</h2>
 Na mitologia grega, Pandora foi uma mulher criada pelos deuses para ter diversas qualidades como graça, beleza, inteligência, paciência e meiguice. Nós, como salão, temos a finalidade de deixar nossos clientes belos como Pandora. Já os complementos Vogue e Velvet é por conta de sua elegância. Esse projeto tem, como objetivo, facilitar o desenvolvimento e realizar um site de um salão de beleza unisex fictícia feito por estudantes da escola SESI a fim de aprofundar nossos conhecimentos nas linguagens PHP e Json.
+<hr>
 
-<hr> 
+<p align="center">
+<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=7159c1&style=for-the-badge"/>
+</p>
+<hr>
 
- 
+# :hammer: Funcionalidades do projeto
+* ✔️`Funcionalidade 1`: Realizar cadastro dos clientes, podendo ser paciente ou profissional. Realizar cadastro de serviços e profissionais.
+* ✔️`Funcionalidade 2`: Armazenar dados dos clientes e agendamentos dos mesmos. 
+* ✔️`Funcionalidade 3`: Funções de recuperar senha de clientes e profissionais.
 
-<p align="center"> 
+ # 📁 Acesso ao projeto
+ - git clone https://github.com/nanaflorencci/PandoraVVBack.git
 
-<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=7159c1&style=for-the-badge"/> 
-
-</p> 
-
-<hr> 
-
- 
-
-# :hammer: Funcionalidades do projeto 
-
-* ✔️`Funcionalidade 1`: Realizar cadastro dos ADM's, clientes, serviços e profissionais. 
-
-* ✔️`Funcionalidade 2`: Armazenar dados dos clientes e dos profissionais e agendamentos dos mesmos. Além dos dados dos ADM's.  
-
-* ✔️`Funcionalidade 3`: Funções de recuperar senha dos ADM's, clientes, profissionais. 
-
- 
-
- # 📁 Acesso ao projeto 
- 
-=======
-Clone este repositório para o seu ambiente de desenvolvimento local utilizando o comando:
+# 🛠️ Como utilizar este repositório
+1. Clonar este repositório para o seu ambiente de desenvolvimento local:
 ```
- - git clone https://github.com/EmyyS2/PandoraVogueVelvet.git
+ git clone https://github.com/nanaflorencci/PandoraVVBack.git
 ```
- 
+2. Acessar o diretório do projeto:
+```
+cd PandoraVVBack
+```
+3. Inicializar o repositório:
+```
+composer update
+```
+4. Copiar o .env do exemplo:
+```
+copy .env.example .env
+```
+5. Acessar o Visual Studio Code:
+```
+code .
+```
+6. Para rodar o projeto:
+```
+php artisan serve
+```
+7. Para acessar o banco de dados:
+```
+php artisan migrate
+```
 
-# 🛠️ Abrir e rodar o projeto 
-```
-- cd PandoraVogueVelvet
-```
-```
-- composer update 
-```
-```
-- copy .env.example .env 
-```
-```
-- code .
-```
-```
-- git config --global user.name "EmyyS2" 
-```
-```
-- git config --global user.email "miacontapcsenai@gmail.com"
-  ```
-```
-- php artisan migrate
-```
-```
-- php artisan serve 
-```
- 
+# Desenvedores do projeto 
+* [Emilly Gabriele](https://github.com/EmyyS2)
+* [Giovanna Florencio](https://github.com/nanaflorencci)
+* [Mariana Leoncio](https://github.com/marileoncio)
+* [Matheus Bispo](https://github.com/Matheus438)
 
-# Desenvedores do projeto  
+## Licença
 
-* [Emilly Gabriele](https://github.com/EmyyS2) 
-
-* [Giovanna Florencio](https://github.com/nanaflorencci) 
-
-* [Mariana Leoncio](https://github.com/marileoncio) 
-
-* [Matheus Bispo](https://github.com/Matheus438) 
-
- 
-
- 
-
- 
+```
+Este projeto está licenciado sob a [MIT License](LICENSE), o que significa que você pode utilizá-lo livremente para fins educacionais, comerciais ou pessoais.
+```
