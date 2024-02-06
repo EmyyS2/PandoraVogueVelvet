@@ -31,11 +31,11 @@ Na mitologia grega, Pandora foi uma mulher criada pelos deuses para ter diversas
 # 🛠️ Como utilizar este repositório
 1. Clonar este repositório para o seu ambiente de desenvolvimento local:
 ```
- git clone https://github.com/nanaflorencci/PandoraVVBack.git
+ git clone https://github.com/EmyyS2/PandoraVogueVelvet.git
 ```
 2. Acessar o diretório do projeto:
 ```
-cd PandoraVVBack
+cd PandoraVogueVelvet
 ```
 3. Inicializar o repositório:
 ```
