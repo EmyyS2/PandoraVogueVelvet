@@ -29,6 +29,7 @@ class ADMController extends Controller
     public function redefinirSenha(Request $request)
     {
         $ADM =  ADM::where('email', $request->email)->first();
+        $ADM =  ADM::where('cpf', $request->cpf)->first();
 
         if (!isset($ADM)) {
             return response()->json([

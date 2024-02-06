@@ -54,6 +54,7 @@ class ClienteController extends Controller
     public function redefinirSenha(Request $request)
     {
         $Cliente =  Cliente::where('email', $request->email)->first();
+        $Cliente =  Cliente::where('cpf', $request->cpf)->first();
 
         if (!isset($Cliente)) {
             return response()->json([
