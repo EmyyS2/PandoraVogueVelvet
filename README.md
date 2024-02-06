@@ -26,7 +26,7 @@ Na mitologia grega, Pandora foi uma mulher criada pelos deuses para ter diversas
 * ✔️`Funcionalidade 3`: Funções de recuperar senha de clientes e profissionais.
 
  # 📁 Acesso ao projeto
- - git clone https://github.com/nanaflorencci/PandoraVVBack.git
+ - git clone https://github.com/EmyyS2/PandoraVogueVelvet.git
 
 # 🛠️ Como utilizar este repositório
 1. Clonar este repositório para o seu ambiente de desenvolvimento local:
