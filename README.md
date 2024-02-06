@@ -53,12 +53,10 @@ Na mitologia grega, Pandora foi uma mulher criada pelos deuses para ter diversas
  
 
  # 📁 Acesso ao projeto 
-<<<<<<< HEAD
  
 =======
 Clone este repositório para o seu ambiente de desenvolvimento local utilizando o comando:
 ```
->>>>>>> 9109c0b01b07a55d6990ce91d7c9a14d3252cc16
  - git clone https://github.com/EmyyS2/PandoraVogueVelvet.git
 ```
  
