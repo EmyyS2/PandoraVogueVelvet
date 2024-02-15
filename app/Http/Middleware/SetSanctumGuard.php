@@ -4,6 +4,8 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Str;
 
 class SetSanctumGuard
 {
@@ -16,6 +18,11 @@ class SetSanctumGuard
      */
     public function handle(Request $request, Closure $next)
     {
+        if (Str::startsWith($request->getRequestUri(), '/api/adm')) {
+            config(['sanctum.guard' => 'ADM']);
+        }else{
+            return 'Sem guard';
+        }
         return $next($request);
     }
 }

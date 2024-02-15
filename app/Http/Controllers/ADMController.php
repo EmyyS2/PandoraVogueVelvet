@@ -6,6 +6,7 @@ use App\Http\Requests\ADMFormRequest;
 use App\Http\Requests\ADMFormRequestUpdate;
 use App\Models\ADM;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class ADMController extends Controller
@@ -142,5 +143,60 @@ class ADMController extends Controller
             'status' => false,
             'message' => "ADM atualizado"
         ]);
+    }
+    public function store(Request $request)
+    {
+        try {
+            $data = $request->all();
+
+            $data['password'] = Hash::make($request->password);
+
+            $response = ADM::create($data)->createToken($request->server('HTTP_USER_AGENT'))->plainTextToken;
+            return response()->json([
+                'status' => 'success',
+                'message' => "Admin cadastrado com sucesso",
+                'token' => $response
+            ], 200);
+        } catch (\Throwable $th) {
+            return response()->json([
+                'status' => false,
+                'menssage' => $th->getMessage()
+            ], 500);
+        }
+    }
+
+    public function login(Request $request)
+    {
+        try {
+            if (Auth::guard('ADM')->attempt([
+                'email' => $request->email,
+                'password' => $request->password
+            ])) {
+                $user = Auth::guard('ADM')->user();
+
+                $token = $user->createToken($request->server('HTTP_USER_AGENT', ['ADM']))->plainTextToken;
+
+                return response()->json([
+                    'status' => true,
+                    'message' => 'login afetuado com sucesso',
+                    'token' => $token
+                ]);
+            } else {
+                return response()->json([
+                    'status' => false,
+                    'message' => 'credenciais incorretas'
+                ]);
+            }
+        } catch (\Throwable $th) {
+            return response()->json([
+                'status' => false,
+                'message' => $th->getMessage()
+            ], 500);
+        }
+    }
+
+    public function verificaUsuarioLogado(Request $request)
+    { return Auth::user();
+
     }
 }

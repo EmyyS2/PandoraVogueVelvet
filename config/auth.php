@@ -40,6 +40,12 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        //adicionada
+        'ADM' => [
+            'driver' => 'session',
+            'provider' => 'ADM'
+        ]
+
     ],
 
     /*
@@ -69,6 +75,13 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+
+         //adicionada
+         'ADM' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\ADM::class,
+        ]
+
     ],
 
     /*
@@ -93,6 +106,7 @@ return [
             'expire' => 60,
             'throttle' => 60,
         ],
+
     ],
 
     /*

@@ -6,6 +6,8 @@ use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\PagamentoController;
 use App\Http\Controllers\ProfissionalController;
 use App\Http\Controllers\ServicoController;
+use App\Http\Middleware\IsAuthenticated;
+use App\Http\Middleware\SetSanctumGuard;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -36,8 +38,15 @@ Route::delete('adm/delete/pagamento/{id}', [PagamentoController::class, 'deletar
 Route::get('adm/visualizar/pagamento', [PagamentoController::class, 'visualizarCadastroTipoPagamento']);
 Route::get('adm/visualizar/pagamento/habilitado', [PagamentoController::class, 'visualizarCadastroPagamentoHabilitado']);
 Route::get('adm/visualizar/pagamento/desabilitado', [PagamentoController::class, 'visualizarCadastroPagamentoDesabilitado']);
-
-
+//ADM login
+Route::post('/create', [ADMController::class, 'store']);
+Route::post('/login', [ADMController::class, 'login']);
+Route::get('adm/logado', [ADMController::class, 'verificaUsuarioLogado'])
+    ->middleware(
+        'auth:sanctum',
+        SetSanctumGuard::class,
+        IsAuthenticated::class
+    );
 
 
 //Profissional
