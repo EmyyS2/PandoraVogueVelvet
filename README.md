@@ -49,13 +49,14 @@ copy .env.example .env
 ```
 code .
 ```
-6. Para rodar o projeto:
-```
-php artisan serve
-```
-7. Para acessar o banco de dados:
+6. Para acessar o banco de dados:
 ```
 php artisan migrate
+```
+
+7. Para rodar o projeto:
+```
+php artisan serve
 ```
 
 # Desenvedores do projeto 
